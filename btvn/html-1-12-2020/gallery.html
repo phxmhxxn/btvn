@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/mysite.css">
+    <script src="./js/mysite.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a href="./index.html">
+            <button class="button">
+                <i class="fa fa-home myIcon"></i>
+                <span>Home</span>
+            </button>
+        </a>
+        <a href="./gallery.html">
+            <button class="button">
+                <i class="fa fa-image myIcon"></i>
+                <span>Gallery</span>
+            </button>
+        </a>
+        <a href="./order.html">
+            <button class="button">
+                <i class="fa fa-phone myIcon"></i>
+                <span>Order</span>
+            </button>    
+        </a>    
+        <a href="./gallery.html#phone">
+            <button class="button">
+                <i class="fa fa-mobile myIcon"></i>
+                <span>Phone</span>
+            </button>        
+        </a>
+        <a href="./gallery.html#tablet">
+            <button class="button">
+                <i class="fa fa-tablet myIcon"></i>
+                <span>Tablet</span>
+            </button>       
+        </a>
+        <a href="./gallery.html#laptop">
+            <button class="button">
+                <i class="fa fa-laptop myIcon"></i>
+                <span>Laptop</span>
+            </button>        
+        </a>
+        <div style="display: flex;; flex: 1; justify-content: flex-end; padding-right: 10px;">
+            <span style="display: flex; justify-content: flex-start; align-items: center;">
+                <i class="fa fa-search myIcon" 
+                    style="margin-right: -45px;z-index: 3;
+                    color: gainsboro;
+                    position: relative;"></i>            
+                <input type="text" name="searchText" 
+                    placeholder="Search..."
+                    class="searchBox" id="searchText">            
+            </span>
+        </div>
+        
+    </header>
+    <div class="slideshow-container" > 
+  
+      
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="./images (1).jpg" style="width:auto; height: 200px; vertical-align: middle "> 
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="./Mac-Laptop.png" style="width:auto; height: 200px; vertical-align: middle "> 
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./71tpif8dqnl-_sl1500_-500x500.jpg" style="width:auto; height: 200px; vertical-align: middle "> 
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="./29techtoys.600.jpg" style="width:auto; height: 200px; vertical-align: middle "> 
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+      </div>
+        <footer>
+            kjdakdasdas
+        </footer>  
+
+</body>
+</html>
