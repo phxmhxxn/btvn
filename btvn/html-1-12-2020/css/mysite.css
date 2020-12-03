@@ -8,6 +8,18 @@
     align-items: center;
 }
 
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+footer {
+  background-color:#ADB96E;
+  width: 100%;
+  height: 50px;    
+}
+table {
+  padding: 0px 20px;
+}
 .myIcon{
     font-size:1.5em;   
     margin-left: 15px;
@@ -33,7 +45,7 @@
     
 }
 
-.button:hover,:focus-visible {
+.button:hover{
     background-color:#C6D580 ;
     color: white;
 }
@@ -46,35 +58,42 @@
   position: relative;
   margin: auto;  
   text-align: center;
+  height: 300px;  
+  overflow: hidden
    
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;  
-  vertical-align: middle 
+  display: block;  
+  vertical-align: middle;
+  position: absolute;   
+  width: 100%; 
+  left: 100%; 
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  float: left;
+.prev, .next { 
+  position: absolute;  
   cursor: pointer;  
   width: auto; 
-  margin-top: -100px;
-  padding: 10px;  
+  margin-top: 100px;
+  padding: 15px;  
   background-color: gray;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 100px 100px 100px 100px;
+  border-radius: 15px 15px 15px 15px;
   user-select: none; 
 }
 
 /* Position the "next button" to the right */
+.prev {
+  left: 0%;
+}
 .next {
-  float: right;
-  border-radius: 100px 100px 100px 100px;
+  right: 0%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -105,13 +124,12 @@
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  display: inline-block; 
 }
 
 .active, .dot:hover {
@@ -119,20 +137,111 @@
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.slideIn { 
+  animation: 50s slideIn;
 
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+
+.slideOut {  
+  animation: 50s slideOut;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.slideInR {  
+  left: unset;
+  right: 100%;
+  animation: 50s slideInR;
+
+}
+
+
+.slideOutR {   
+  left: unset;
+  right: 0%;
+  animation: 50s slideOutR;
+}
+
+
+
+  
+
+@keyframes slideIn { 
+  0% {left: 100%}
+  1% {left: 0%} 
+  100% {left: 0%} 
+}
+
+@keyframes slideOut {
+  0% {left: 0%}  
+  1% {left: -100%}
+  100% {left: -100%}
+}
+
+
+
+@keyframes slideInR {  
+  
+  0% {Right: 100%}
+  1% {Right: 0%} 
+  100% {Right: 0%} 
+}
+
+@keyframes slideOutR {
+   
+  0% {Right: 0%}  
+  1% {Right: -100%}
+  100% {Right: -100%}
+}
+
+input,select{
+  outline: none;
+}
+.boxShadow {
+  width: 90%;        
+  background-color: lightgray;
+  -webkit-box-shadow: 10px 11px 7px 0px rgba(5,5,5,0.38);
+  -moz-box-shadow: 10px 11px 7px 0px rgba(5,5,5,0.38);
+  box-shadow: 10px 11px 7px 0px rgba(5,5,5,0.38);
+  border-radius: 5px;        
+  margin-top: 40px;
+}
+.part {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;    
+  position: relative;    
+  top: -15px;
+  left: 10px;
+}
+
+
+.collapsible {
+background-color: #777;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+}
+
+.active, .collapsible:hover {
+background-color: #555;
+}
+
+#collapsibleContent {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
+}
+
+.button1{
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 150px;
+  height: 50px;
 }
