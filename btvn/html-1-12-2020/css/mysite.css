@@ -1,15 +1,19 @@
 #header {
     background-color:#ADB96E;
-    width: 100%;
+    width: 100%; 
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; 
 }
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+.content{
+  width: 90%;
 }
 
 footer {
@@ -17,9 +21,21 @@ footer {
   width: 100%;
   height: 50px;    
 }
-table {
-  padding: 0px 20px;
+
+.table2 {
+  width: 90%;
+  padding-bottom: 20px;  
+  padding-right: 50%;  
 }
+.table1 { 
+  padding: 0 150px 0 150px ;
+} 
+ 
+.desc {
+  text-align: right;
+  width: 200px;
+}
+ 
 .myIcon{
     font-size:1.5em;   
     margin-left: 15px;
@@ -30,7 +46,7 @@ table {
     border-radius: 17px;
     border-width: 0px;
     padding-left: 35px;
-    font size: 18px;
+    font-size: 18px;
     width: 160px;
 
 }
@@ -42,7 +58,6 @@ table {
     height: 50px;  
     margin-top: -10px;   
     outline:none;
-    
 }
 
 .button:hover{
@@ -52,27 +67,22 @@ table {
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
+.slideShow {
   max-width: 100%;
   position: relative;
   margin: auto;  
   text-align: center;
   height: 300px;  
-  overflow: hidden
-   
+  overflow: hidden;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: block;  
-  vertical-align: middle;
   position: absolute;   
   width: 100%; 
   left: 100%; 
 }
 
-/* Next & previous buttons */
 .prev, .next { 
   position: absolute;  
   cursor: pointer;  
@@ -87,41 +97,18 @@ table {
   border-radius: 15px 15px 15px 15px;
   user-select: none; 
 }
-
-/* Position the "next button" to the right */
+ 
 .prev {
   left: 0%;
 }
 .next {
   right: 0%;
 }
-
-/* On hover, add a black background color with a little bit see-through */
+ 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
+   
 .dot {
   cursor: pointer;
   height: 15px;
@@ -135,13 +122,10 @@ table {
 .active, .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
+ 
 .slideIn { 
   animation: 50s slideIn;
-
 }
-
 
 .slideOut {  
   animation: 50s slideOut;
@@ -151,19 +135,13 @@ table {
   left: unset;
   right: 100%;
   animation: 50s slideInR;
-
 }
-
 
 .slideOutR {   
   left: unset;
   right: 0%;
   animation: 50s slideOutR;
 }
-
-
-
-  
 
 @keyframes slideIn { 
   0% {left: 100%}
@@ -206,14 +184,17 @@ input,select{
   margin-top: 40px;
 }
 .part {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   text-align: left;    
   position: relative;    
-  top: -15px;
+  top: -19px;
   left: 10px;
 }
 
+#term {
+  color: rgb(54, 54, 54);
+}
 
 .collapsible {
 background-color: #777;
@@ -231,8 +212,9 @@ font-size: 15px;
 background-color: #555;
 }
 
-#collapsibleContent {
-padding: 0 18px;
+#collapsibleContent { 
+border-width: 0px;
+width: 90%;  
 display: none;
 overflow: hidden;
 background-color: #f1f1f1;
