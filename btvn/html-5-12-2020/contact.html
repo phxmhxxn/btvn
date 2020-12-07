@@ -23,18 +23,18 @@
                     <td>FIRST NAME</td>
                     <td><input type="text" required pattern="[A-Za-z]{0,30}" oninput="
                         this.setCustomValidity(this.validity.patternMismatch ? '  ' : '')
-                        if(this.checkValidity()) {document.getElementById('fName').innerText = ''}
-                        else {document.getElementById('fName').innerText = '(max 30 chars a-z and A-Z)'}">
-                        <p id="fName" style="display: inline; color: coral;"></p>
+                        if(this.checkValidity()) {document.getElementById('fName').style.color = 'white'}
+                        else {document.getElementById('fName').style.color = 'coral'}">
+                        <p id="fName" style="display: inline; color: coral;">(max 30 chars a-z and A-Z)</p>
                     </td>
                 </tr>
                 <tr>
                     <td>LAST NAME</td>
                     <td><input type="text" required pattern="[A-Za-z]{0,30}" oninput="
                         this.setCustomValidity(this.validity.patternMismatch ? '  ' : '')
-                        if(this.checkValidity()) {document.getElementById('lName').innerText = ''}
-                        else {document.getElementById('lName').innerText = '(max 30 chars a-z and A-Z)'}">
-                        <p id="lName" style="display: inline; color: coral;"></p>
+                        if(this.checkValidity()) {document.getElementById('lName').style.color = 'white'}
+                        else {document.getElementById('lName').style.color = 'coral'}">
+                        <p id="lName" style="display: inline; color: coral;">(max 30 chars a-z and A-Z)</p>
                     </td>
                 </tr>
                 <tr>
@@ -127,11 +127,9 @@
                     <td>MOBILE NUMBER</td>
                     <td><input type="text" required pattern="[0-9]{10}$" oninput="
                         this.setCustomValidity(this.validity.patternMismatch ? '  ' : '')
-                        if(this.checkValidity()) {document.getElementById('mobi').innerText = ''}
-                        else  {document.getElementById('mobi').innerText = '(Please enter valid mobile number!)'}">(10
-                        digit
-                        number)
-                        <p id="mobi" style="display: inline; color: coral;">
+                        if(this.checkValidity()) {document.getElementById('mobi').style.color = 'white'}
+                        else  {document.getElementById('mobi').style.color = 'coral'}">
+                        <p id="mobi" style="display: inline; color: coral;">(10 digit number)</p>
                     </td>
                 </tr>
                 <tr>
